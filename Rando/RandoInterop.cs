@@ -28,6 +28,9 @@ namespace MoreStags {
             if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CSLInterop.Hook();
 
+            if(ModHooks.GetMod("ConnectionSettingsRandomizer") is Mod)
+                CSRInterop.Hook();
+
             if(ModHooks.GetMod("RandoSettingsManager") is Mod)
               RSMInterop.Hook();
 
