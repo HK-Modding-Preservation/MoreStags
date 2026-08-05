@@ -39,6 +39,7 @@ These are brand new locations and are not pooled with the rest of the rando chec
 	- The condensed log will include all active stags in the usual Stag Stations section
 	- A new file "*MoreStagsActiveSpoiler.txt*" will provide a list of active stags even if stags are not randomized
 - **QoL**'s *Stag Arrive* setting works with all new locations
+- **ConnectionSettingsRando** works as expected
 - **RandoSettingsManager** works as expected
 - **AlreadyEnoughPlayMaker** is recommended to reduce lag while scrolling but is not strictly required as a dependency
 - **LoreRandomizer**'s *Cursed Listening* has been accounted for
