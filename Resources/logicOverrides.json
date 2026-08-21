@@ -552,12 +552,16 @@
         "logic": "ORIG | Stag-Mine_Entrance + Can_Stag"
     },
     {
+        "name": "Mines_10[bot1]",
+        "logic": "ORIG | Stag-Crystal_Corridor + Can_Stag + (FULLCLAW + LEFTSUPERDASH | WINGS + LEFTDASH + LEFTCLAW + (RIGHTCLAW | LEFTSUPERDASH + SPELLAIRSTALL + $CASTSPELL))"
+    },
+    {
         "name": "Mines_10[left1]",
-        "logic": "ORIG | Stag-Overlook + Can_Stag + (FULLCLAW + LEFTSUPERDASH | WINGS + LEFTDASH + LEFTCLAW + (RIGHTCLAW | LEFTSUPERDASH + SPELLAIRSTALL + $CASTSPELL))"
+        "logic": "ORIG | Stag-Crystal_Corridor + Can_Stag + (FULLCLAW + LEFTSUPERDASH | WINGS + LEFTDASH + LEFTCLAW + (RIGHTCLAW | LEFTSUPERDASH + SPELLAIRSTALL + $CASTSPELL))"
     },
     {
         "name": "Mines_10[right1]",
-        "logic": "ORIG | Stag-Overlook + Can_Stag + (RIGHTSUPERDASH | RIGHTDASH + WINGS + (RIGHTCLAW + SPELLAIRSTALL + $CASTSPELL[3] | $SHADESKIP))"
+        "logic": "ORIG | Stag-Crystal_Corridor + Can_Stag + (RIGHTSUPERDASH | RIGHTDASH + WINGS + (RIGHTCLAW + SPELLAIRSTALL + $CASTSPELL[3] | $SHADESKIP))"
     },
     {
         "name": "Mines_13[bot1]",
