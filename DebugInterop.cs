@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Linq;
+using System.Reflection;
 using MonoMod.RuntimeDetour;
 
 namespace MoreStags {
@@ -15,13 +16,20 @@ namespace MoreStags {
             foreach(string pdBool in new string[] { "openedTownBuilding", "gladeDoorOpened", "troupeInTown"}) {
                 pd.SetBool(pdBool, true);
             }
-            foreach(StagData data in MoreStags.localData.activeStags) {
-                if(data.isVanilla)
-                    pd.SetBool(Consts.OpenedNames[data.name], true);
-                else
-                    MoreStags.localData.opened[data.name] = true;
+
+            if(MoreStags.localData.enabled) {
+                foreach(StagData data in MoreStags.localData.activeStags) {
+                    if(data.isVanilla)
+                        pd.SetBool(Consts.OpenedNames[data.name], true);
+                    else
+                        MoreStags.localData.opened[data.name] = true;
+                }
+                DebugMod.Console.AddLine("Unlocked all active stags");
             }
-            DebugMod.Console.AddLine("Unlocked all active stags");
+            else {
+                Consts.OpenedNames.Values.ToList().ForEach(s => pd.SetBool(s, true));
+                DebugMod.Console.AddLine("Unlocked all stags");
+            }
         }
     }
 }
