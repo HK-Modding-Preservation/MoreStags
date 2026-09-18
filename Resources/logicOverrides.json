@@ -321,7 +321,7 @@
     },
     {
         "name": "Fungus2_21[left1]",
-        "logic": "ORIG | Stag-City_Gate + Can_Stag + (ACID | (RIGHTDASH | WINGS) + (Lever-Pilgrim's_Way_Left?TRUE | LEFTSUPERDASH | (FULLCLAW | WINGS + ANYCLAW) + LEFTDASH))"
+        "logic": "ORIG | Stag-City_Gate + Can_Stag + ((ACID | Lever-Pilgrim's_Way_Left?FALSE) | (RIGHTDASH | WINGS) + (Lever-Pilgrim's_Way_Left?TRUE | LEFTSUPERDASH | (FULLCLAW | WINGS + ANYCLAW) + LEFTDASH))"
     },
     {
         "name": "Fungus2_28[left1]",
