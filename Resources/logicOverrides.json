@@ -104,6 +104,10 @@
         "logic": "ORIG | Stag-Grubfather + Can_Stag"
     },
     {
+        "name": "Crossroads_45[right1]",
+        "logic": "ORIG | Stag-Myla + Can_Stag"
+    },
+    {
         "name": "Crossroads_46b[right1]",
         "logic": "ORIG | Stag-Upper_Tram + Can_Stag"
     },
@@ -601,7 +605,7 @@
     },
     {
         "name": "Mines_35[left1]",
-        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?FALSE + (LEFTDASH | LEFTSUPERDASH | LEFTCLAW | WINGS | (FIREBALLSKIPS + (RIGHTFIREBALL | SCREAM)) + $CASTSPELL[3])"
+        "logic": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?TRUE + (LEFTDASH | LEFTSUPERDASH | LEFTCLAW | WINGS | (FIREBALLSKIPS + (RIGHTFIREBALL | SCREAM)) + $CASTSPELL[3])"
     },
     {
         "name": "Monomon",
@@ -693,7 +697,7 @@
     },
     {
         "name": "Soul_Totem-Crossroads_Myla",
-        "logic": "Crossroads_45"
+        "logic": "ORIG | Stag-Myla + Can_Stag"
     },
     {
         "name": "Soul_Totem-Crystallized_Mound",
@@ -705,7 +709,7 @@
     },
     {
         "name": "Soul_Totem-Oro_Dive_1",
-        "logic": "ORIG | Stag-Lower_Kingdom's_Edge + Can_Stag + WINGS + ANYCLAW + Broke_Oro_Quake_Floor_2"
+        "logic": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag + WINGS + ANYCLAW + Broke_Oro_Quake_Floor_2"
     },
     {
         "name": "Soul_Totem-Pale_Lurker",

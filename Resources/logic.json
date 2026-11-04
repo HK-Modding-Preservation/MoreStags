@@ -157,7 +157,7 @@
   },
   {
     "name": "Stag-Myla",
-    "logic": "Crossroads_45 | Stag-Myla + Can_Stag"
+    "logic": "Crossroads_45[left1] | Crossroads_45[right1] | Stag-Myla + Can_Stag"
   },
   {
     "name": "Stag-Upper_Wastes",
@@ -317,11 +317,11 @@
   },
   {
     "name": "Stag-White_Lady",
-    "logic": "Room_Queen[left1]"
+    "logic": "Room_Queen[left1] | Stag-White_Lady + Can_Stag"
   },
   {
     "name": "Stag-Upper_Gardens",
-    "logic": "Fungus3_22[right1] | Fungus3_22 + (ANYCLAW | WINGS)"
+    "logic": "Fungus3_22[right1] | Fungus3_22 + (ANYCLAW | WINGS) | Stag-Upper_Gardens + Can_Stag"
   },
   {
     "name": "Stag-Dreamshield",

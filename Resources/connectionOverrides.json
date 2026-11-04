@@ -49,6 +49,16 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Defeated_Any_Baldur",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Defeated_Any_Crystal_Hunter",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Defeated_Any_Hopper",
         "logicOverride": "ORIG | Stag-East_Kingdom's_Edge + Can_Stag",
         "logicSubstitutions": {}
@@ -73,6 +83,11 @@
     {
         "name": "Defeated_Any_Shadow_Creeper",
         "logicOverride": "ORIG | Stag-The_Abyss + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "Defeated_Any_Shardmite",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + (FIREBALL>1 + $CASTSPELL | LEFTCLAW | WINGS + (RIGHTCLAW | SCREAM>1 + $CASTSPELL))",
         "logicSubstitutions": {}
     },
     {
@@ -204,6 +219,11 @@
     {
         "name": "Middle_Glade",
         "logicOverride": "ORIG | Shrine_of_Believers + (RIGHTCLAW | LEFTDASH | WINGS | SPELLAIRSTALL + $CASTSPELL[3])",
+        "logicSubstitutions": {}
+    },
+    {
+        "name": "MoreDoors-Crystal_Hunter-Crystallized_Mound",
+        "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag",
         "logicSubstitutions": {}
     },
     {
