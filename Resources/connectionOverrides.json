@@ -101,6 +101,11 @@
         "logicSubstitutions": {}
     },
     {
+        "name": "Defeated_Any_Wingmould",
+        "logicOverride": "ORIG | Stag-Path_of_Pain_Climb + Can_Stag",
+        "logicSubstitutions": {}
+    },
+    {
         "name": "Dive_Floor-Crystallized_Mound",
         "logicOverride": "ORIG | Stag-Crystallised_Mound + Can_Stag + Plank-Crystallized_Mound?TRUE + QUAKE + $CASTSPELL",
         "logicSubstitutions": {}

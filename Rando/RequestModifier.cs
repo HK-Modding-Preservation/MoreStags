@@ -75,8 +75,8 @@ namespace MoreStags {
         private static void AddAndRemoveLocations(RequestBuilder rb) {
             if(!MoreStags.Settings.Enabled)
                 return;
+            LocalData ld = MoreStags.localData;
             if(rb.gs.PoolSettings.Stags) {
-                LocalData ld = MoreStags.localData;
                 foreach(StagData data in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(ld))) {
                     string nameToRemove = Consts.LocationNames[data.name];
                     rb.RemoveLocationByName(nameToRemove);
@@ -103,6 +103,15 @@ namespace MoreStags {
                             rl.AddCost(new LogicGeoCost(factory.lm, data.cost));
                         };
                     });
+                    rb.AddItemByName(stagLocation);
+                }
+            }
+            else {
+                foreach(StagData data in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(ld))) {
+                    rb.RemoveFromVanilla(Consts.LocationNames[data.name]);
+                }
+                foreach(string data in ld.activeStags.Where(stag => !stag.isVanilla).Select(stag => RandoInterop.nameToLocation(stag.name))) {
+                    rb.AddToVanilla(data, data);
                 }
             }
         }
@@ -120,18 +129,6 @@ namespace MoreStags {
                         MajorItem = false
                     };
                 });
-                if(rb.gs.PoolSettings.Stags) {
-                    rb.AddItemByName(stagLocation);
-                }
-                else {
-                    rb.AddToVanilla(stagLocation, stagLocation);
-                }
-            }
-
-            if(!rb.gs.PoolSettings.Stags) {
-                foreach(string vanillaLocation in StagData.allStags.Where(stag => stag.isVanilla && !stag.isActive(MoreStags.localData)).Select(stag => Consts.LocationNames[stag.name])) {
-                    rb.RemoveFromVanilla(vanillaLocation);
-                }
             }
         }
 
